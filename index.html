@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+
+    <main class="main">
+        <div id="settings" class="settings">
+            <input type="color" id="colorPicker" value="#000000">
+            <button id="colorBtn">Color</button>
+            <button id="rainbowBtn">Rainbow</button>
+            <button id="clearBtn">Clear</button>
+            <button id="eraseBtn">Erase</button>
+            <p id="gridSizeValue" value="">16 x 16</p>
+            <input type="range" class="gridSizeSlider" value="16" min="1" max="64" onchange="updateGridSize(this.value)">
+        </div>
+        <div id="grid-container" class="grid-container"></div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright © Kibenmumen</p>
+    </footer>
+</body>
+</html>
